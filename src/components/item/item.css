@@ -1,0 +1,107 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: solid 1px black;
+    position: relative;
+}
+.item:hover .first-image{
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+}
+.item:hover .info-block{
+    transform: translateY(-100%);
+    z-index: 1;
+    transition: all ease-in-out 300ms;
+}
+.item:hover .fast-show{
+    z-index: 3;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+.favorite-item{
+    position: absolute;
+    left:3%;
+    top:3%;
+    cursor: pointer;
+    color:rgb(49, 49, 49);
+    z-index: 1;
+    transition: all ease-out 200ms;
+}
+.info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all ease-in-out 300ms;
+    background-color: white;
+    position: relative;
+}
+.fast-show{
+    z-index: -1;
+    width: 100%;
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+    background-color:white;
+    border: none;
+    opacity: .5;
+    position: absolute;
+    top:-5vh;
+    transition: all ease-in-out 300ms;
+    font-size: 12px;
+}
+.fast-show:hover{
+    opacity: 1;
+    transition:all ease-in-out 300ms;
+}
+.item-image{
+    width: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+}
+.item-image-background{
+    width: 100%;
+    z-index: -5;
+}
+.first-image{
+    z-index: 1;
+    opacity: 1;
+    transition: all ease-in-out 300ms;
+}
+.second-image{
+    z-index: 0;
+    transition: all ease-in-out .7s;
+}
+.add-to-cart{
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    background-color: black;
+    color:white;
+    transition: all ease-out 200ms;
+    cursor: pointer;
+}
+.item-name,.item-coast,.add-to-cart{
+    margin-top: 5px;
+}
+.add-to-cart:hover{
+    background-color: rgb(56, 70, 88);
+    transition: all ease-out 200ms;
+}
+.like{
+    color:red;
+    transition: all ease-out 200ms;
+}
+@keyframes imageFade {
+    from{
+        opacity:.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
