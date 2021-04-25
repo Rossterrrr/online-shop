@@ -1,0 +1,22 @@
+.gallery{
+    width: 100%;
+    position: relative;
+}
+.gallery-images{
+    display:flex;
+    width: inherit;
+}
+.gallery-images img{
+    width:inherit;
+    object-fit: cover;
+}
+.prev-image , .next-image{
+    position: absolute;
+    top:50%
+}
+.prev-image{
+    left:5%;
+}
+.next-image{
+    right: 5%;
+}
