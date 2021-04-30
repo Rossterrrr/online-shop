@@ -1,0 +1,95 @@
+.modal *{
+    transition: all ease-out 200ms;
+}
+.modal *:hover{
+    transition: all ease-out 200ms;
+}
+.modal,.vertical-carousel,.gallery-image{
+    height: 80vh;
+}
+.modal{
+    padding: 25px 25px;
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 100px black;
+}
+.gallery{
+    display: flex;
+    width: 70%;
+    position: relative;
+}
+.vertical-carousel{
+    width: 20%;
+    overflow: hidden;
+}
+.gallery-image{
+    width: auto;
+    margin: 0 auto;
+}
+.vertical-carousel img{
+    width: 100%;
+}
+.gallery-image img{
+    height: 100%;
+}
+.prev-btn,.next-btn{
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    color:rgb(153, 153, 153);
+    cursor: pointer;
+}
+.prev-btn:hover,.next-btn:hover{
+    font-size:28px;
+    color:rgb(85, 71, 107);
+}
+.prev-btn{
+    top:-3%;
+}
+.next-btn{
+    top:100%;
+}
+.modal-info-block{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sizes div{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(114, 204, 95);
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+}
+.close-modal{
+    background-color: transparent;
+    color:grey;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right:1%;
+    top:1%;
+    font-size: 24px;
+}
+.close-modal:hover{
+    background-color: tomato;
+    color:white;
+}
+.sizes div:hover{
+    background-color: grey;
+}
